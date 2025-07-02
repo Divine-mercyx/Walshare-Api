@@ -1,15 +1,23 @@
 package org.WalshareApi.dto.response.walrus;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class NewlyCreated {
     private BlobObject blobObject;
     private int cost;
+
+    public BlobObject getBlobObject() {
+        return blobObject;
+    }
+
+    public void setBlobObject(BlobObject blobObject) {
+        this.blobObject = blobObject;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
 }

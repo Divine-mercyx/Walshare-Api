@@ -1,14 +1,13 @@
 package org.WalshareApi.dto.response.walrus;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class AlreadyCertified {
     private String blobId;
+
+    public String getBlobId() {
+        return blobId;
+    }
+
+    public void setBlobId(String blobId) {
+        this.blobId = blobId;
+    }
 }
